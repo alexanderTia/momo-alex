@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+    <div id="reset">
+        <img src="../img/annuler.png" alt="" onclick="reset()">
+    </div>
+    <div id="Form" >
+      
+        <div class="choix">
+            <button onclick="inscription()" id="inscription">inscription</button>
+            <button onclick="connexion()" id="connexion">Connexion</button>
+            
+           
+        </div>
+        <form action="" id="formconnexion" >
+           
+            <div  class="block">
+                <div>
+                    Email
+                </div>
+                <div>
+                    <input type="text" ><br>
+                </div>
+                
+                
+            </div>
+            <div  class="block">
+                <div >
+                   Mot De Passe
+                </div>
+                <div>
+                    <input type="text"><br>
+                </div>
+                
+            </div>
+            
+               
+           
+             
+            <div >
+              <button type="submit">Connexion</button>
+            </div>
+           
+        </form>
+        <form action="accueil.html" id="forminscription" method="get">
+            <div class="block">
+                <div>
+                  Nom & Prenom
+                </div>
+                <div>
+                    <input type="text" id="nom"><br>
+                </div>
+                
+            </div>
+           
+            <div  class="block">
+                <div>
+                    email
+                </div>
+                <div>
+                    <input type="text"><br>
+                </div>
+                
+                
+            </div>
+            <div  class="block">
+                <div >
+                    mot de passe
+                </div>
+                <div>
+                    <input type="text"><br>
+                </div>
+                
+            </div>
+            
+               
+           
+             
+            <div >
+              <button type="submit" onclick="validateformulaire()">inscription</button>
+            </div>
+           
+        </form>
+    </div>
+    <script src="../js/jscript.js"></script>
+</body>
+</html>
