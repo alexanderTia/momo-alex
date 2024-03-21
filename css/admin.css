@@ -1,0 +1,84 @@
+body
+{
+    margin: 0;
+    font-size: 16px;
+}
+
+header{
+    width: 100%;
+    height: 40px;
+     padding: 20px 0;
+    
+}
+header button
+{
+    font-size: 16px;
+    border: 0;
+}
+header > button
+{
+    float: left;
+    
+    
+    
+}
+nav{
+    float:right;
+   
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    
+}
+
+nav a
+{margin: 0 8px;}
+
+section
+{
+    width: 60%;
+    margin: 50px 0;
+    padding-left: 20px;
+}
+#entete
+{
+    width:100% ;
+    margin: 10px 0;
+    
+   
+}
+#entete button
+{
+    float: right;
+}
+
+img{
+   height: 20px;
+   margin:0 5px;
+}
+
+section button,#agent div:last-child div,#maison div:last-child div
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#agent,#maison
+{
+ display: flex;
+ border-bottom:1px solid black ;
+}
+#agent div:first-of-type,#agent div:first-of-type,#maison div:first-of-type
+{
+  width: 70%;
+}
+#agent div:last-child,#maison div:last-child
+{
+    display: flex;
+}
+#agent div:last-child div,#maison div:last-child div
+{
+    margin: 0 5px;
+}
