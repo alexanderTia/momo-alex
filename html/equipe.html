@@ -5,9 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/equipe.css">
     <title>Document</title>
 </head>
 <body>
+    <header class="header">
+        <nav>
+            <div class="nav-left">
+                <img src="../img/8d048849becb48129a16590327bf479d.png" alt="" class="logo">
+                <button onclick="connexion()" id="login"> Se Connecter</button>
+            </div>
+            <div class="nav-rigth">
+                <a href="">accueil</a>
+                <a href="equipe.html">agents</a>
+                <a href="#droite">contact</a>
+                <a href="">reserver en ligne</a>
+            </div>
+        </nav>
+    </header>
     <main>
         <div class="gb_titre"><h2>NOS AGENTS</h2></div>
         <div class="grand_bloc">
@@ -59,7 +74,7 @@
                 <p>Paragraphe. Vous pouvez le modifier et ajouter votre texte. Double-cliquez ici ou cliquez sur « Modifier le texte » pour ajouter votre contenu et personnaliser la police.
                 </p>
             </div>
-            <div class="droite">
+            <div class="droite" id="droite">
                 <h2>NOUS CONTACTER</h2>
                 <form action="traitement.php">
                     <div id="nom_prenom">
@@ -98,6 +113,6 @@
             <div></div>
         </section>
     </footer>
-    <script src="script.js"></script>
+    <script src="../js/jscript.js"></script>
 </body>
 </html>
