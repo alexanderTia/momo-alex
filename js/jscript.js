@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
    
 });
 function connexion()
-{
+{  
+    document.location.href="../html/form.html";
     document.getElementById("forminscription").style.display="none";
     document.getElementById("formconnexion").style.display="block";
     document.getElementById("connexion").style.borderBottom="3px solid blue";
@@ -31,9 +32,27 @@ function inscription()
 
 }
 
-function validateformulaire()
+/*function validateformulaire()
 {
     var name=document.getElementById("nom").value;
     document.getElementById("login").textContent=name;
     
+}*/
+
+function filtre()
+{
+   let div=document.createElement("div");
+   let button1=document.createElement("button");
+   let button2=document.createElement("button");
+   button1.textContent="AGENT";
+   button2.textContent="MAISON";
+   
+   div.style.border="1px solid red";
+   button1.style.border="1px solid black";
+   button2.style.border="1px solid black"
+   div.style.border="1px solid black";
+   div.style.marginBottom="30px"
+   div.appendChild(button2);
+   div.appendChild(button1);
+   document.getElementById("entete").appendChild(div);
 }
