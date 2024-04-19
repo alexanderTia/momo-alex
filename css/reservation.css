@@ -1,0 +1,63 @@
+body{
+    font-family:  Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    background: white
+}
+
+.choix{
+    text-align: center;
+    padding: none;
+    
+}
+.choix button{
+    background-color: inherit;
+    color: #283B62;
+    padding: 12px 16px;
+    border: none;
+    border-bottom: 1px solid #CBB492;
+}
+
+.grand_bloc{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.petit_bloc{
+    margin: 20px 30px ;
+    padding: 5x 10px ;
+    text-align: center;
+    border: 1px solid #5272B2;
+
+}
+.petit_bloc a{
+    text-decoration: none;
+}
+.petit_bloc a h3{
+    color: #2f2e2e;
+}
+.petit_bloc a h3:hover{
+   color: #5272B2; 
+}
+.petit_bloc p{
+    color: #2f2E2E;
+
+}
+.petit_bloc button{
+    margin: 10px 20px;
+    padding: 12px 16px;
+    border: none;
+    font-size: inherit;
+    color: #fff;
+    background-color: #5272B2;
+}
+.petit_bloc button:hover{
+    margin: 10px 20px;
+    padding: 12px 16px;
+    border: none;
+    font-size: inherit;
+    color: #fff;
+    background-color: #5272B2;
+    opacity: 0.7;
+}
