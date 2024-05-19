@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail du client</title>
+    <link rel="stylesheet" href="../css/next.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav>
+            <div class="nav-left">
+                <img src="../img/8d048849becb48129a16590327bf479d.png" alt="" class="logo">
+                <button onclick="connexion()" id="login"> Se Connecter</button>
+            </div>
+            <div class="nav-rigth">
+               <a href="">accueil</a>
+               <a href="equipe.html">agents</a>
+               <a href="#droite">contact</a>
+               <a href="">reserver en ligne</a>
+            </div>
+        </nav>
+        
+
+        </div>
+    </header>
+
+
+    <div class="retour">
+        <a href="">
+            <img src="../img/retour.png" alt="retour" width="16px" height="16px">
+            <span>Retour</span>
+        </a>
+    </div>
+    <div class="main">
+        <div class="left">
+            <span>Détails du client</span>
+            <hr>
+            <div class="compte">Avez-vous un compte?<a href="#"> Connecter-vous</a> pour réserver plus rapidement.</div>
+            <form action="traitement.php">
+                <div class="nom_adr">
+                    <div class="n_dr">
+                        <label for="nom">Nom de famille *</label><br>
+                        <input type="text" name="nom" id="nom" maxlength="100" required><br>
+                        <span id="Compteur">0</span><span>/100</span>
+                    </div>
+                    <script>
+                        const textInput = document.getElementById('nom');
+                        const letterCount = document.getElementById('Compteur');
+                
+                        textInput.addEventListener('input', () => {
+                            letterCount.textContent = textInput.value.length;
+                        });
+                    </script>
+                    <div class="n_go">
+                        <label for="adr">Adresse e-mail *</label><br>
+                        <input type="text" name="adr" id="adr" required>
+                    </div>
+                </div>
+                <label for="num">Numéro de téléphone</label><br>
+                <input type="number" name="num" id="num"><br><br>
+                <label for="message">Ajoutez votre message</label><br>
+                <input type="text" name="message" id="message">
+                
+
+            </form>
+        </div>
+        <div class="right">
+            <div>
+                 <div class="reserver">
+                     <span>Détails de la réservation</span> 
+                     <img src="" alt="">
+                 </div>
+                 <p>Altone Lane</p>
+                 <p>16 mai 2024 à 13:00</p>
+                 <p>MARC ROUX</p>
+                 <p>1h</p>
+            </div>
+            <div class="payement">
+                <hr>
+                <p>Détails du paiement</p>
+                <div class="total">
+                    <p>Total</p>
+                    <p>79000 £</p>
+                </div>
+                <button>Reserver</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <section id="section1">
+            <div class="gauche">
+                <h2>TROUVER VOTRE MAISON</h2>
+                <p>Paragraphe. Vous pouvez le modifier et ajouter votre texte. Double-cliquez ici ou cliquez sur « Modifier le texte » pour ajouter votre contenu et personnaliser la police.
+                </p>
+            </div>
+            <div class="droite" id="droite">
+                <h2>NOUS CONTACTER</h2>
+                <form action="traitement.php">
+                    <div id="nom_prenom">
+                       <div id="noms">
+                        <label for="nom">Nom</label><br><br>
+                        <input type="text" name="nom" id="nom">
+                       </div>
+                       <div id="prenoms">
+                        <label for="prenom">Prénom</label><br><br>
+                        <input type="text" name="prenom" id="prenom">
+                       </div>
+                    </div>
+                    <div class="e_mail">
+                     <label for="email">Email</label><br><br>
+                     <input type="email" name="email" id="email" required><br>
+                    </div>
+                    <div class="radio">
+                     <label for="choix">Intéressé.e par: </label>
+                     <input type="radio" name="choix" id="achat">
+                     <label for="achat">Achat</label>
+                     <input type="radio" name="choix" id="location">
+                     <label for="location">Location</label>
+                     <input type="radio" name="choix" id="autre">
+                     <label for="autre">Autre</label><br>
+                    </div>
+                    <div class="messages">
+                     <label for="message">Message</label> <br><br>
+                     <textarea name="message" id="message" cols="60" rows="5"></textarea> 
+                    </div> 
+                    <button>Envoyer</button>               
+                </form>
+            </div>
+
+        </section>
+        <section id="section2">
+            <div></div>
+        </section>
+    </footer>
+    
+
+</body>
+</html>
